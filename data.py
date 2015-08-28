@@ -11,7 +11,18 @@ bostoncollege2 = pd.Series(["James", "Seong", "Andrew", "John", "Alice"],
 print bostoncollege2
 
 #The Series constructor can convert a dictionary as well, using the keys of the dictionary as its index
-bostoncollege3 = pd.Series({'James': 'A&S', 'Seong': 'CSOM', 'Andrew': 'CSOM', 'John': 'CSOM', 'Alice': 'CSOM'})
+bostoncollege3 = pd.Series({'James': 'A&S', 'Seong': 'CSOM', 'Andrew': 'CSOM', 'John': 'CSOM', 'Alice': 'A&S'})
 print bostoncollege3
 
 
+print bostoncollege3['James']
+print '\n'
+print bostoncollege3[['James','Seong','Andrew']]
+print '\n'
+
+print bostoncollege3[bostoncollege3 == 'A&S']
+
+conditions = bostoncollege3 == 'CSOM'
+print conditions
+print '\n'
+print bostoncollege3[conditions]
