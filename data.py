@@ -26,3 +26,17 @@ conditions = bostoncollege3 == 'CSOM'
 print conditions
 print '\n'
 print bostoncollege3[conditions]
+
+
+print '\n'
+
+print 'James' in bostoncollege3
+print 'james' in bostoncollege3
+
+print '\n'
+BCdata = pd.Series({'James': 100, 'Seong': 200, 'Andrew': 300, 'John': 400, 'Alice': 500})
+print BCdata
+
+print BCdata / 3
+print np.square(BCdata)
+
