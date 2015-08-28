@@ -40,3 +40,23 @@ print BCdata
 print BCdata / 3
 print np.square(BCdata)
 
+
+print '\n'
+test1 = BCdata[['James', 'Seong', 'Andrew']]
+print test1
+
+print '\n'
+
+test2 = BCdata[['James', 'Alice']]
+print test2
+
+result = test1 + test2
+print BCdata.notnull()
+print '\n'
+print result
+print '\n'
+print result.notnull()
+
+#Notice that because Seong, Andrew, and Alice were not found in both Series, they were returned with NULL/NaN values.
+#NULL checking can be performed with usnull and notnull
+
