@@ -60,3 +60,13 @@ print result.notnull()
 #Notice that because Seong, Andrew, and Alice were not found in both Series, they were returned with NULL/NaN values.
 #NULL checking can be performed with usnull and notnull
 
+
+#DATA FRAME---------------------------------------------------------------------------------------------------------------
+
+nbadata = {'year': [2010,2011,2012,2013,2014,2015],
+	   'team': ['Los Angeles Lakers', 'Dallas Mavericks', 'Miami Heat', 'Miami heat', 'San Antonio Spurs', 'Golden State Warriors'],
+	   'wins': [57, 57, 46, 66, 62, 67],
+	   'losses': [25, 25, 20, 16, 20, 15]}
+
+nba = pd.DataFrame(nbadata, columns=['year', 'team', 'wins', 'losses'])
+print nba
